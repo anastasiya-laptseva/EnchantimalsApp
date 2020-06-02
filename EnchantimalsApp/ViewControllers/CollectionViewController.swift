@@ -11,9 +11,41 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
-    var personage = [Personage]()
+    
+    var personage = [Personage(id: 1, name: "Blyss"),
+                     Personage(id: 2, name: "Bren"),
+                     Personage(id: 3, name: "Cameo"),
+                     Personage(id: 4, name: "Cherish"),
+                     Personage(id: 5, name: "Clarita"),
+                     Personage(id: 6, name: "Dolche"),
+                     Personage(id: 7, name: "Ekaterina"),
+                     Personage(id: 8, name: "Ekaterina"),
+                     Personage(id: 9, name: "Felicity"),
+                     Personage(id: 10, name: "Gillian"),
+                     Personage(id: 11, name: "Hixbi"),
+                     Personage(id: 12, name: "Jessa"),
+                     Personage(id: 13, name: "Karina"),
+                     Personage(id: 14, name: "Liora"),
+                     Personage(id: 15, name: "Lorna"),
+                     Personage(id: 16, name: "Merit"),
+                     Personage(id: 17, name: "Ohana"),
+                     Personage(id: 18, name: "Pekki"),
+                     Personage(id: 19, name: "Petya"),
+                     Personage(id: 20, name: "Preena"),
+                     Personage(id: 21, name: "Prue"),
+                     Personage(id: 22, name: "Raelin"),
+                     Personage(id: 23, name: "Saffi"),
+                     Personage(id: 24, name: "Sancha"),
+                     Personage(id: 25, name: "Sandella"),
+                     Personage(id: 26, name: "Starling"),
+                     Personage(id: 27, name: "Tanzie"),
+                     Personage(id: 28, name: "Taylie"),
+                     Personage(id: 29, name: "Winsley"),
+                     Personage(id: 30, name: "Zelena")]
     let sectionCount = 2
-
+    let segueId = "onePerson"
+    var selectedPersonage: Personage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,17 +53,23 @@ class CollectionViewController: UICollectionViewController {
         self.collectionView.delegate = self
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == segueId {
+            guard let onePersonage = segue.destination as? OnePersonageViewController else { return }
+            onePersonage.person = selectedPersonage
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedPersonage = personage[indexPath.section*sectionCount+indexPath.row]
+        self.performSegue(withIdentifier: segueId, sender: self)
+    }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -53,6 +91,7 @@ class CollectionViewController: UICollectionViewController {
 //        SaveManager.shared.backgroundSwitch(controller: self, navigation: nil, views: [cell])
         return cell
     }
+    
 
     // MARK: UICollectionViewDelegate
 

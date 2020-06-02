@@ -16,6 +16,7 @@
 		0EA892C924864C8200014701 /* Personage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA892C824864C8200014701 /* Personage.swift */; };
 		0EA892CB2486507F00014701 /* Collection Personage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA892CA2486507F00014701 /* Collection Personage.swift */; };
 		0EA892CE2486533000014701 /* PersonageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA892CD2486533000014701 /* PersonageManager.swift */; };
+		0EA892D124866F1900014701 /* OnePersonageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA892D024866F1900014701 /* OnePersonageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0EA892C824864C8200014701 /* Personage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personage.swift; sourceTree = "<group>"; };
 		0EA892CA2486507F00014701 /* Collection Personage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection Personage.swift"; sourceTree = "<group>"; };
 		0EA892CD2486533000014701 /* PersonageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonageManager.swift; sourceTree = "<group>"; };
+		0EA892D024866F1900014701 /* OnePersonageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnePersonageViewController.swift; path = EnchantimalsApp/Managers/OnePersonageViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,11 @@
 		0EA892B0248643B800014701 /* EnchantimalsApp */ = {
 			isa = PBXGroup;
 			children = (
+				0EA892CF24866EDE00014701 /* ViewControllers */,
 				0EA892CC2486530500014701 /* Managers */,
 				0EA892C724864C5D00014701 /* Entities */,
 				0EA892B1248643B800014701 /* AppDelegate.swift */,
 				0EA892B3248643B800014701 /* SceneDelegate.swift */,
-				0EA892C52486447200014701 /* CollectionViewController.swift */,
 				0EA892B7248643B800014701 /* Main.storyboard */,
 				0EA892BA248643BE00014701 /* Assets.xcassets */,
 				0EA892BC248643BE00014701 /* LaunchScreen.storyboard */,
@@ -90,6 +92,15 @@
 				0EA892CD2486533000014701 /* PersonageManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		0EA892CF24866EDE00014701 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EA892D024866F1900014701 /* OnePersonageViewController.swift */,
+				0EA892C52486447200014701 /* CollectionViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA892D124866F1900014701 /* OnePersonageViewController.swift in Sources */,
 				0EA892CB2486507F00014701 /* Collection Personage.swift in Sources */,
 				0EA892C62486447200014701 /* CollectionViewController.swift in Sources */,
 				0EA892B2248643B800014701 /* AppDelegate.swift in Sources */,
