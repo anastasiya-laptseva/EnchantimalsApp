@@ -11,7 +11,7 @@ import UIKit
 class PersonageManager {
     
     static let shared = PersonageManager()
-    let images = ["Blyss", "Bren", "Cameo", "Cherish", "Clarita", "Dolche", "Ekaterina", "Fanci", "Felicity", "Gillian", "Hixbi", "Jessa", "Karina", "Liora", "Lorna", "Merit", "Ohana", "Pekki", "Petya", "Preena", "Prue", "Raelin", "Saffi", "Sancha", "Sandella", "Starling", "Tanzie", "Taylie", "Winsley", "Zelena"]
+    let images = ["Andie", "Bevy", "Blyss", "Bree", "Bren", "Cailey", "Cambrie", "Cameo", "Cherish",  "Ciesta", "Clarita", "Danessa", "Dinah", "Dolche", "Ekaterina", "Fanci", "Felicity", "Fluffy", "Gillian", "Hawna", "Haydie",  "Hedda", "Hixbi", "Jessa", "Karina", "Larissa", "Liora", "Lluella", "Lorna", "Mayla", "Merit", "Naddie", "Ohana", "Patter", "Patterson", "Pawbry", "Pekki", "Petya", "Preena", "Prue", "Raelin", "Redward", "Saffi", "Sage", "Sancha", "Sandella", "Sashay", "Sela", "Sharlotte", "Starling", "Sybill", "Tadley", "Tamika", "Tanzie", "Taylie", "Winsley", "Zelena"]
     
     private init() {}
     
